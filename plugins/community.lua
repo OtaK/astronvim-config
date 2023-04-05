@@ -13,6 +13,9 @@ return {
   { import = "astrocommunity.diagnostics.lsp_lines-nvim" },
   { import = "astrocommunity.test.neotest" },
 
+  -- Git setup
+  { import = "astrocommunity.git.git-blame-nvim" },
+
   -- Visual things
   { import = "astrocommunity.color.tint-nvim" },
   { import = "astrocommunity.indent.indent-tools-nvim" },
@@ -28,7 +31,7 @@ return {
   },
 
   -- UI
-  { import = "astrocommunity.bars-and-lines.feline-nvim" },
+  -- { import = "astrocommunity.bars-and-lines.feline-nvim" },
   { import = "astrocommunity.colorscheme.catppuccin" },
   {
     -- further customize the options set by the community

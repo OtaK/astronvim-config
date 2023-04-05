@@ -25,9 +25,17 @@ return {
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
     ["<leader>tt"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" },
+    ["<leader>gg"] = {
+      function()
+        require("toggleterm.terminal").Terminal:new({ cmd = "lazygit", direction = "float", hidden = true }):toggle()
+      end,
+      desc = "Toggle Gitui",
+    },
   },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
+    --
+    ["<esc>"] = { "<cmd>ToggleTerm<cr>", desc = "Exit terminal" },
   },
 }

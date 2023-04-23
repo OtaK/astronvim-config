@@ -12,12 +12,14 @@ return {
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.diagnostics.lsp_lines-nvim" },
   { import = "astrocommunity.test.neotest" },
+  { import = "astrocommunity.lsp.inc-rename" },
 
   -- Git setup
   { import = "astrocommunity.git.git-blame-nvim" },
 
   -- Visual things
   { import = "astrocommunity.color.tint-nvim" },
+  { import = "astrocommunity.scrolling.nvim-scrollbar" },
   { import = "astrocommunity.indent.indent-tools-nvim" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
   { import = "astrocommunity.editing-support.nvim-ts-rainbow2" },
@@ -33,6 +35,7 @@ return {
   -- UI
   -- { import = "astrocommunity.bars-and-lines.feline-nvim" },
   { import = "astrocommunity.colorscheme.catppuccin" },
+  { import = "astrocommunity.colorscheme.poimandres" },
   {
     -- further customize the options set by the community
     "catppuccin",
